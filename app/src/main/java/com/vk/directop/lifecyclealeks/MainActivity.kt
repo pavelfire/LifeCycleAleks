@@ -10,8 +10,8 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 
 
-private const val KEY_ONE = "HELLO_KEY"
-private const val RESULT_KEY = "RESULT_KEY"
+ const val KEY_ONE = "HELLO_KEY"
+ const val RESULT_KEY = "RESULT_KEY"
 
 class MainActivity : AppCompatActivity() {
 
