@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:text="Hello World!"
+        android:text="@string/info_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -21,16 +21,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="btLesson1"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="160dp" />
+        android:text="@string/btlesson1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btLesson2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="btLesson2"
+        android:text="@string/btlesson2"
         app:layout_constraintEnd_toEndOf="@+id/btLesson1"
         app:layout_constraintStart_toStartOf="@+id/btLesson1"
         app:layout_constraintTop_toBottomOf="@+id/btLesson1" />

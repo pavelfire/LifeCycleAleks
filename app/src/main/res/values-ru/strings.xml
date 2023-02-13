@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btlesson1">Урок 1</string>
+    <string name="btlesson2">Урок 2</string>
+    <string name="app_name">Жизненный цикл Алекс</string>
+    <string name="info_text">Здесь информация из первого урока</string>
+    <string name="button_label_toast">Тоаст</string>
+    <string name="button_label_count">Счёт</string>
+    <string name="button_label_send">Отправить</string>
+    <string name="hint_edit_send_to_main">Отправить на главную</string>
+    <string name="received_text_here">Тут будет полученный текст</string>
+</resources>
