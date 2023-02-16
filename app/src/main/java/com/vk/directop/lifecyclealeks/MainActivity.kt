@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         val btLesson1 = findViewById<Button>(R.id.btLesson1)
         val tvInfo1 = findViewById<TextView>(R.id.tvInfo1)
-        val btLesson2 = findViewById<Button>(R.id.btLesson2)
+        val btLesson13 = findViewById<Button>(R.id.btLesson1_3)
 
         receivedText = tvInfo1.text.toString()
 
@@ -54,8 +54,8 @@ class MainActivity : AppCompatActivity() {
             tvInfo1.text = receivedText
         }
 
-        btLesson2.setOnClickListener {
-            tvInfo1.text = receivedText
+        btLesson13.setOnClickListener {
+            startActivity(Intent(this, Lesson1_3_Activity::class.java))
         }
 
 
