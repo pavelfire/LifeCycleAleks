@@ -9,4 +9,5 @@
     <string name="button_label_send">Отправить</string>
     <string name="hint_edit_send_to_main">Отправить на главную</string>
     <string name="received_text_here">Тут будет полученный текст</string>
+    <string name="toast_message">Привет Тоаст!</string>
 </resources>

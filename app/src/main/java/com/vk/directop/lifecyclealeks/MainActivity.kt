@@ -14,7 +14,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 const val KEY_ONE = "HELLO_KEY"
 const val RESULT_KEY = "RESULT_KEY"
 private const val KEY_TEXT_RECEIVED = "KEY_TEXT_RECEIVED"
-private const val TAG = "LifeCycleAleks"
+const val TAG = "LifeCycleAleks"
 private var receivedText = "init"
 
 class MainActivity : AppCompatActivity() {
@@ -67,6 +67,7 @@ class MainActivity : AppCompatActivity() {
             )
             startForResult.launch(intent1)
         }
+
     }
 
     override fun onSaveInstanceState(outState: Bundle) {

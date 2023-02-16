@@ -13,7 +13,7 @@
         android:backgroundTint="@color/purple_200"
         android:text="@string/button_label_toast"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,7 +25,7 @@
         android:text="@string/button_label_count"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -36,19 +36,19 @@
         android:text="@string/button_label_send"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/button_toast" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autofillHints="@string/hint_edit_send_to_main"
         android:ems="10"
         android:hint="@string/hint_edit_send_to_main"
-        android:autofillHints="@string/hint_edit_send_to_main"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/button_send"
-        app:layout_constraintTop_toTopOf="@+id/button_send" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_toast" />
 
     <TextView
         android:id="@+id/tvFromMainActivity"
@@ -69,10 +69,11 @@
         android:textColor="@color/purple_500"
         android:textSize="160sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button_count"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btZero" />
+        app:layout_constraintStart_toEndOf="@+id/button_send"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btZero"
@@ -81,7 +82,7 @@
         android:backgroundTint="@color/purple_200"
         android:text="Zero"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFromMainActivity" />
 
