@@ -63,6 +63,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btClock).setOnClickListener {
             startActivity(Intent(this, ClockActivity::class.java))
         }
+        findViewById<Button>(R.id.btHandler).setOnClickListener {
+            startActivity(Intent(this, HandlerExampleActivity::class.java))
+        }
 
         val fab = findViewById<FloatingActionButton>(R.id.fab)
         fab.setOnClickListener {
