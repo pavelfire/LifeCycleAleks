@@ -9,6 +9,8 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.snackbar.Snackbar
 
 
 const val KEY_ONE = "HELLO_KEY"
@@ -56,6 +58,19 @@ class MainActivity : AppCompatActivity() {
 
         btLesson13.setOnClickListener {
             startActivity(Intent(this, Lesson1_3_Activity::class.java))
+        }
+
+        findViewById<Button>(R.id.btClock).setOnClickListener {
+            startActivity(Intent(this, ClockActivity::class.java))
+        }
+
+        val fab = findViewById<FloatingActionButton>(R.id.fab)
+        fab.setOnClickListener {
+            fab.setOnClickListener { view ->
+                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null)
+                    .show()
+            }
         }
 
 
