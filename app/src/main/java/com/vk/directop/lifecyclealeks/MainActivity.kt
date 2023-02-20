@@ -11,6 +11,7 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
+import com.vk.directop.lifecyclealeks.handlers.HandlerExampleActivity
 
 
 const val KEY_ONE = "HELLO_KEY"
@@ -57,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btLesson13.setOnClickListener {
-            startActivity(Intent(this, Lesson1_3_Activity::class.java))
+            startActivity(Intent(this, Lesson1underscore3Activity::class.java))
         }
 
         findViewById<Button>(R.id.btClock).setOnClickListener {

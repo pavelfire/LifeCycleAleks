@@ -1,9 +1,10 @@
-package com.vk.directop.lifecyclealeks
+package com.vk.directop.lifecyclealeks.handlers
 
 //https://www.youtube.com/watch?v=e7fzvA6XCcc
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.vk.directop.lifecyclealeks.R
 import com.vk.directop.lifecyclealeks.databinding.ActivityCrashAnrTestBinding
 
 private lateinit var binding: ActivityCrashAnrTestBinding
