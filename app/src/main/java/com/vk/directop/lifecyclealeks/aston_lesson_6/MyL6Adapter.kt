@@ -30,32 +30,7 @@ class MyL6Adapter : RecyclerView.Adapter<BaseL6ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: BaseL6ViewHolder, position: Int) {
-        when (holder) {
-            is FirstViewHolder -> {
-                with(holder.binding) {
-                    listItemTitle.text = itemList[position].title
-                    listItemDescription.text = itemList[position].description
-
-                    listItemContainer.setOnClickListener {
-                        // два способа обработки нажатий
-                        clickAction?.invoke()
-                        myL6Listener?.firstOnClick()
-                    }
-                }
-            }
-            is SecondViewHolder -> {
-                with(holder.binding) {
-                    listItemTitle.text = itemList[position].title
-                    listItemDescription.text = itemList[position].description
-
-                    listItemContainer.setOnClickListener {
-                        // два способа обработки нажатий
-                        clickAction?.invoke()
-                        myL6Listener?.firstOnClick()
-                    }
-                }
-            }
-        }
+        holder.populate(itemList[position], clickAction, myL6Listener!!)
 
 //        with(holder.binding){
 //            listItemTitle.text = itemList[position].title
