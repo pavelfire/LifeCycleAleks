@@ -67,6 +67,12 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btHandler).setOnClickListener {
             startActivity(Intent(this, HandlerExampleActivity::class.java))
         }
+        findViewById<Button>(R.id.btHarry).setOnClickListener {
+            startActivity(Intent(this, HarryActivity::class.java))
+        }
+        findViewById<Button>(R.id.btFragmentNavigation).setOnClickListener {
+            startActivity(Intent(this, HarryActivity::class.java))
+        }
 
         val fab = findViewById<FloatingActionButton>(R.id.fab)
         fab.setOnClickListener {
