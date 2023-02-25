@@ -11,6 +11,7 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
+import com.vk.directop.lifecyclealeks.aston_lesson_6.AstonL6Activity
 import com.vk.directop.lifecyclealeks.handlers.HandlerExampleActivity
 
 
@@ -72,6 +73,9 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.btFragmentNavigation).setOnClickListener {
             startActivity(Intent(this, HarryActivity::class.java))
+        }
+        findViewById<Button>(R.id.btAstonLesson6).setOnClickListener {
+            startActivity(Intent(this, AstonL6Activity::class.java))
         }
 
         val fab = findViewById<FloatingActionButton>(R.id.fab)

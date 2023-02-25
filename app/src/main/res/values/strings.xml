@@ -34,6 +34,8 @@ Once you have caught the wave, go from paddling position to a kneeling position 
     <string name="screen_label" translatable="false">Screen #%1$d</string>
     <string name="about">about</string>
     <string name="options">options</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!--string name="becoming_a_pro"> Becoming a Pro
         1
 Catch a few broken waves closer to shore. You wouldn\'t bet on a baby to run a marathon, so don\'t insert yourself in the line up right away if you don\'t have to. Paddle out to sea and catch a broken wave in shallower, white water nearer to the shore.

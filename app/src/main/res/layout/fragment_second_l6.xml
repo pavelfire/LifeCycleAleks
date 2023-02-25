@@ -1,0 +1,11 @@
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_recycler_view"
+    android:layout_width="600dp"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:descendantFocusability="beforeDescendants"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:context=".aston_lesson_6.FirstL6Fragment"
+    tools:listitem="@layout/settings_item" />
