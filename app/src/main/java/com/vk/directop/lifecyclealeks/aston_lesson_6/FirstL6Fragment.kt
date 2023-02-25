@@ -56,13 +56,13 @@ class FirstL6Fragment : Fragment(), MyL6Listener {
             RecyclerDto(description = "Ogogoshechka"),
             RecyclerDto(),
             RecyclerDto(),
+            RecyclerDto(viewType = 1),
             RecyclerDto(),
             RecyclerDto(),
             RecyclerDto(),
             RecyclerDto(),
-            RecyclerDto(),
-            RecyclerDto(),
-            RecyclerDto(),
+            RecyclerDto(viewType = 1),
+            RecyclerDto(viewType = 1),
             RecyclerDto(),
             RecyclerDto(),
             RecyclerDto(),
@@ -111,5 +111,7 @@ class FirstL6Fragment : Fragment(), MyL6Listener {
 
 data class RecyclerDto(
     val title: String = "Name here",
-    val description: String = "Default description"
+    val description: String = "Default description",
+//    val viewType: Int = R.layout.second_list_item
+    val viewType: Int = 2
 )
