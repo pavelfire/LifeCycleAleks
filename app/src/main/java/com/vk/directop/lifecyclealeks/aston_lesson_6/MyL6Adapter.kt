@@ -8,6 +8,7 @@ import com.vk.directop.lifecyclealeks.databinding.RecyclerItemLes6Binding
 class MyL6Adapter: RecyclerView.Adapter<MyL6Adapter.MyL6ViewHolder>() {
 
     var clickAction: (() -> Unit)? = null
+    var myL6Listener: MyL6Listener? = null
     var itemList: List<RecyclerDto> = emptyList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyL6ViewHolder {
@@ -22,7 +23,9 @@ class MyL6Adapter: RecyclerView.Adapter<MyL6Adapter.MyL6ViewHolder>() {
             listItemDescription.text = itemList[position].description
 
             listItemContainer.setOnClickListener {
+                // два способа обработки нажатий
                 clickAction?.invoke()
+                myL6Listener?.firstOnClick()
             }
         }
     }

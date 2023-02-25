@@ -10,7 +10,7 @@ import androidx.fragment.app.replace
 import com.vk.directop.lifecyclealeks.R
 import com.vk.directop.lifecyclealeks.databinding.FragmentFirstL6Binding
 
-class FirstL6Fragment : Fragment() {
+class FirstL6Fragment : Fragment(), MyL6Listener {
 
     lateinit var binding: FragmentFirstL6Binding
 
@@ -28,6 +28,8 @@ class FirstL6Fragment : Fragment() {
         val adapter = MyL6Adapter().apply {
             itemList = mockItemList
             clickAction = ::navigateToSecondFragment
+            myL6Listener = this@FirstL6Fragment
+
         }
 
         binding.firstRecyclerView.adapter = adapter
@@ -91,6 +93,20 @@ class FirstL6Fragment : Fragment() {
                 }
             }
     }
+
+    override fun firstOnClick() {
+        TODO("Not yet implemented")
+    }
+
+    override fun secondOnClick() {
+        TODO("Not yet implemented")
+    }
+
+    override fun thirdOnClick() {
+        TODO("Not yet implemented")
+    }
+
+
 }
 
 data class RecyclerDto(
