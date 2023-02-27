@@ -27,6 +27,9 @@
     </string>
     <string name="lesson_1_3">About Surfung L3_1</string>
     <string name="add_comment">Add comment</string>
+    <string name="move_up">Move Up</string>
+    <string name="move_down">Move Down</string>
+    <string name="remove">Remove</string>
     <!--string name="becoming_a_pro">becoming_a_pro</string>
     <string name="in_water">fdf</string-->
 </resources>
