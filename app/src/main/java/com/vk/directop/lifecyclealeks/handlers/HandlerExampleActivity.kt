@@ -22,6 +22,5 @@ class HandlerExampleActivity : AppCompatActivity() {
         findViewById<Button>(R.id.handlersLevel2).setOnClickListener {
             startActivity(Intent(this, HandleLevel2Activity::class.java))
         }
-
     }
 }

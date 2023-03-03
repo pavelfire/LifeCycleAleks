@@ -13,6 +13,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.vk.directop.lifecyclealeks.aston_lesson_6.AstonL6Activity
 import com.vk.directop.lifecyclealeks.handlers.HandlerExampleActivity
+import com.vk.directop.lifecyclealeks.read_contacts.ReadContactsActivity
 import com.vk.directop.lifecyclealeks.recycler_user.MainRecyclerUserActivity
 
 
@@ -80,6 +81,9 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.btRecyclerUser).setOnClickListener {
             startActivity(Intent(this, MainRecyclerUserActivity::class.java))
+        }
+        findViewById<Button>(R.id.btContacts).setOnClickListener {
+            startActivity(Intent(this, ReadContactsActivity::class.java))
         }
 
         val fab = findViewById<FloatingActionButton>(R.id.fab)
