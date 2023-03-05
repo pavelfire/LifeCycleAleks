@@ -1,7 +1,8 @@
 package com.vk.directop.lifecyclealeks.recycler_user.model
 
 import com.github.javafaker.Faker
-import java.util.Collections
+import com.vk.directop.lifecyclealeks.recycler_user.UserNotFoundException
+import java.util.*
 
 typealias UsersListener = (users: List<User>) -> Unit
 
@@ -23,12 +24,21 @@ class UsersService {
             )
         }
         users = generateUsers.toMutableList()
-        users.add(User(101,"","Pavel", "Aston"))
+        users.add(User(101, "", "Pavel", "Aston"))
     }
 
     fun getUsers(): List<User> {
         return users
     }
+
+    fun getById(id: Long): UserDetails {
+        val user = users.firstOrNull { it.id == id } ?: throw UserNotFoundException()
+        return UserDetails(
+            user = user,
+            details = Faker.instance().lorem().paragraphs(3).joinToString("\n\n")
+        )
+    }
+
 
     fun deleteUser(user: User) {
         val indexToDelete = users.indexOfFirst { it.id == user.id }
