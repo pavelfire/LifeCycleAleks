@@ -15,6 +15,7 @@ import com.vk.directop.lifecyclealeks.aston_lesson_6.AstonL6Activity
 import com.vk.directop.lifecyclealeks.handlers.HandlerExampleActivity
 import com.vk.directop.lifecyclealeks.read_contacts.ReadContactsActivity
 import com.vk.directop.lifecyclealeks.recycler_user.MainRecyclerUserActivity
+import com.vk.directop.lifecyclealeks.rx_java_example.RxJavaActivity
 
 
 const val KEY_ONE = "HELLO_KEY"
@@ -84,6 +85,9 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.btContacts).setOnClickListener {
             startActivity(Intent(this, ReadContactsActivity::class.java))
+        }
+        findViewById<Button>(R.id.btRxJavaExample).setOnClickListener {
+            startActivity(Intent(this, RxJavaActivity::class.java))
         }
 
         val fab = findViewById<FloatingActionButton>(R.id.fab)
